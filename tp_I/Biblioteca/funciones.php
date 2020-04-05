@@ -1,11 +1,20 @@
 <?php
 
+require 'paises.php'; 
+
 class funciones extends paises
 {
+    function buscarPais($nombre)
+    {
+        $paises = new paises('Argentina');
+        echo $nombre ->mostrar();
+    }
+    
+
     function saludarEspanol($nombre)
     {
-        $persona = new Persona(' Juan ');
-        echo $persona ->saludar();
+        $paises = new Persona(' Juan ');
+        echo $paises ->saludar();
     }
 
 }
