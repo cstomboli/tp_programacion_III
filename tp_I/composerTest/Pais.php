@@ -11,6 +11,6 @@ class Pais{
 
     public function mostrar()
     {
-        echo "El pais ingresado es" .$this->nombre;
+        echo "El pais ingresado es " .$this->nombre;
     } 
 }

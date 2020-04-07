@@ -2,12 +2,12 @@
 
 require 'Pais.php'; 
 
-class Funciones extends Pais
-{
-    function buscarPais($nombre)
+//class Funciones extends Pais
+//{
+    function buscarPais()
     {
-        $paises = new Pais('Juan');
-        echo $paises ->mostrar();
+        $paises = new Pais(' Juan ');
+        $paises ->mostrar();
     }
 
-}
+//}

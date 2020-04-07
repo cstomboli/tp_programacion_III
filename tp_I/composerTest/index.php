@@ -1,7 +1,7 @@
 <?php
 
 require_once __DIR__ .'/vendor/autoload.php';
-include './Funciones.php';
+include 'Funciones.php';
 
 use NNV\RestCountries;
 
@@ -21,7 +21,7 @@ $nombre= (json_decode($nombrePais))[0]->name;
 //$miPais = __construct($nombre);
 //$miPais->mostrar();
 
-buscarPais("TITA");
+buscarPais();
 
 
 
