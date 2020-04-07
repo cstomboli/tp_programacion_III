@@ -17,11 +17,11 @@ $nombre= (json_decode($nombrePais))[0]->name;
 
 //echo "Muestro $nombre"; //Hasta aca muestra Argentina.
 
-//$miPais = new $Pais ("TITA");
+$miPais = new Pais ("TITA");
 //$miPais = __construct($nombre);
-//$miPais->mostrar();
+$miPais->mostrar();                 //ANDA
 
-buscarPais();
+//$miPais->buscarPais();            //NO ANDA
 
 
 
