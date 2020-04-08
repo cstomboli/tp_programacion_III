@@ -7,19 +7,19 @@ use NNV\RestCountries;
 
 $restCountries = new RestCountries;
 //$paises= $restCountries->all();               //Muestra todos
-//$paises= $restCountries->byName("Argentina");   //ESto lo trae por Nombre
+$paises= $restCountries->byName("Argentina");   //ESto lo trae por Nombre
 //$restCountries->byLanguage("vi");             //esto lo trae or lenguaje
 //$restCountries->byRegion("asia");             //Search by region: Africa, Americas, Asia, Europe, Oceania
 
 //echo json_encode($paises);
-$nombrePais= json_encode($restCountries->fields(["name"])->byName("Argentina"));
-$nombre= (json_decode($nombrePais))[0]->name;
+//$nombrePais= json_encode($restCountries->fields(["name"])->byName("Argentina"));
+//$nombre= (json_decode($nombrePais))[0]->name;
 
-//echo "Muestro $nombre"; //Hasta aca muestra Argentina.
-
-$miPais = new Pais ("TITA");
+//echo "Muestro $paises"; //Hasta aca muestra Argentina.
+var_dump($paises);
+//$miPais = new Pais ("TITA");
 //$miPais = __construct($nombre);
-$miPais->mostrar();                 //ANDA
+//$miPais->mostrar();                 //ANDA
 
 //$miPais->buscarPais();            //NO ANDA
 
